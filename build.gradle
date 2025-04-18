@@ -3,7 +3,30 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+
+    // code formatter
+    id 'com.diffplug.spotless' version '7.0.2'
+
+
 }
+
+// code formatter
+spotless {
+    java {
+        googleJavaFormat()
+        removeUnusedImports()
+        trimTrailingWhitespace()
+        endWithNewline()
+    }
+}
+
+// Ensure Spotless runs before the compilation process
+// This way we always have well-formatted code
+tasks.named('compileJava').configure {
+    dependsOn tasks.named('spotlessApply')
+}
+
 
 version = mod_version
 group = mod_group_id

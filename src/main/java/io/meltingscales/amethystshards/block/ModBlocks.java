@@ -26,6 +26,24 @@ public class ModBlocks {
           "raw_alexandrite_block",
           () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
+  public static final RegistryObject<Block> ALEXANDRITE_ORE =
+      registerBlock(
+          "alexandrite_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+
+  public static final RegistryObject<Block> DEEPSLATE_ALEXANDRITE_ORE =
+      registerBlock(
+          "deepslate_alexandrite_ore",
+          () -> new Block(BlockBehaviour.Properties.copy(ALEXANDRITE_ORE.get())));
+
+  public static final RegistryObject<Block> END_STONE_ALEXANDRITE_ORE =
+      registerBlock(
+          "end_stone_alexandrite_ore",
+          () -> new Block(BlockBehaviour.Properties.copy(ALEXANDRITE_ORE.get())));
+  public static final RegistryObject<Block> NETHER_ALEXANDRITE_ORE =
+      registerBlock(
+          "nether_alexandrite_ore",
+          () -> new Block(BlockBehaviour.Properties.copy(ALEXANDRITE_ORE.get())));
+
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
     RegistryObject<T> toReturn = BLOCKS.register(name, block);
     registerBlockItem(name, toReturn);

@@ -2,6 +2,7 @@ package io.meltingscales.amethystshards;
 
 import com.mojang.logging.LogUtils;
 import io.meltingscales.amethystshards.block.ModBlocks;
+import io.meltingscales.amethystshards.item.ModCreativeModeTabs;
 import io.meltingscales.amethystshards.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -25,7 +26,8 @@ public class AmethystShards {
   public AmethystShards() {
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-    // register our mod's items and blocks
+    ModCreativeModeTabs.register(modEventBus);
+
     ModItems.register(modEventBus);
     ModBlocks.register(modEventBus);
 

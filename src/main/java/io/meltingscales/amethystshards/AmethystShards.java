@@ -1,6 +1,7 @@
 package io.meltingscales.amethystshards;
 
 import com.mojang.logging.LogUtils;
+import io.meltingscales.amethystshards.block.ModBlocks;
 import io.meltingscales.amethystshards.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,8 +25,9 @@ public class AmethystShards {
   public AmethystShards() {
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-    // register our mod's items
+    // register our mod's items and blocks
     ModItems.register(modEventBus);
+    ModBlocks.register(modEventBus);
 
     modEventBus.addListener(this::commonSetup);
 
@@ -40,6 +42,11 @@ public class AmethystShards {
     if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
       event.accept(ModItems.ALEXANDRITE);
       event.accept(ModItems.RAW_ALEXANDRITE);
+    }
+
+    if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+      event.accept(ModBlocks.ALEXANDRITE_BLOCK);
+      event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
     }
   }
 

@@ -1,6 +1,6 @@
 package io.meltingscales.amethystshards.item;
 
-import io.meltingscales.amethystshards.AmethystShards;
+import io.meltingscales.amethystshards.AmethystShardsMod;
 import io.meltingscales.amethystshards.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModeTabs {
   public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-      DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AmethystShards.MOD_ID);
+      DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AmethystShardsMod.MOD_ID);
 
   public static final RegistryObject<CreativeModeTab> COURSE_TAB =
       CREATIVE_MODE_TABS.register(

@@ -1,6 +1,6 @@
 package io.meltingscales.amethystshards.block;
 
-import io.meltingscales.amethystshards.AmethystShards;
+import io.meltingscales.amethystshards.AmethystShardsMod;
 import io.meltingscales.amethystshards.item.ModItems;
 import java.util.function.Supplier;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -20,7 +20,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlocks {
   public static final DeferredRegister<Block> BLOCKS =
-      DeferredRegister.create(ForgeRegistries.BLOCKS, AmethystShards.MOD_ID);
+      DeferredRegister.create(ForgeRegistries.BLOCKS, AmethystShardsMod.MOD_ID);
 
   public static final RegistryObject<Block> ALEXANDRITE_BLOCK =
       registerBlock(

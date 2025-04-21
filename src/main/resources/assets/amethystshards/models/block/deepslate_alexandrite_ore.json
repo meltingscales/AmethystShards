@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "amethystshards:block/deepslate_alexandrite_ore"
-  }
-}

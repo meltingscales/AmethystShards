@@ -1,0 +1,14 @@
+{
+  "item.amethystshards.alexandrite": "Alexandrite",
+  "item.amethystshards.raw_alexandrite": "Raw Alexandrite",
+
+  "block.amethystshards.alexandrite_block": "Block of Alexandrite",
+  "block.amethystshards.raw_alexandrite_block": "Block of Raw Alexandrite",
+
+  "block.amethystshards.alexandrite_ore": "Alexandrite Ore",
+  "block.amethystshards.deepslate_alexandrite_ore": "Deepslate Alexandrite Ore",
+  "block.amethystshards.end_stone_alexandrite_ore": "End Stone Alexandrite Ore",
+  "block.amethystshards.nether_alexandrite_ore": "Nether Alexandrite Ore",
+
+  "creativetab.course_tab": "Course Tab"
+}

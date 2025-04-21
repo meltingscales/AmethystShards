@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "mccourse:deepslate_alexandrite_ore",
-    "mccourse:end_stone_alexandrite_ore",
-    "mccourse:nether_alexandrite_ore"
+    "amethystshards:deepslate_alexandrite_ore",
+    "amethystshards:end_stone_alexandrite_ore",
+    "amethystshards:nether_alexandrite_ore"
   ]
 }

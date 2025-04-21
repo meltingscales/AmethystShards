@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "mccourse:alexandrite_block",
-    "mccourse:raw_alexandrite_block",
-    "mccourse:alexandrite_ore"
+    "amethystshards:alexandrite_block",
+    "amethystshards:raw_alexandrite_block",
+    "amethystshards:alexandrite_ore"
   ]
 }

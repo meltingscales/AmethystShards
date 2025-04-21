@@ -2,6 +2,8 @@
   "item.amethystshards.alexandrite": "Alexandrite",
   "item.amethystshards.raw_alexandrite": "Raw Alexandrite",
 
+  "item.amethystshards.metal_detector": "Metal Detector",
+
   "block.amethystshards.alexandrite_block": "Block of Alexandrite",
   "block.amethystshards.raw_alexandrite_block": "Block of Raw Alexandrite",
 
@@ -10,5 +12,7 @@
   "block.amethystshards.end_stone_alexandrite_ore": "End Stone Alexandrite Ore",
   "block.amethystshards.nether_alexandrite_ore": "Nether Alexandrite Ore",
 
-  "creativetab.course_tab": "Course Tab"
+  "creativetab.course_tab": "Course Tab",
+
+  "item.amethystshards.metal_detector.no_valuables": "No valuables found."
 }

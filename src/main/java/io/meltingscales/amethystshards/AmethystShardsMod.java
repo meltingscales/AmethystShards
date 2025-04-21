@@ -49,6 +49,10 @@ public class AmethystShardsMod {
       event.accept(ModBlocks.ALEXANDRITE_BLOCK);
       event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
     }
+
+    if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+      event.accept(ModItems.METAL_DETECTOR);
+    }
   }
 
   // You can use SubscribeEvent and let the Event Bus discover methods to call

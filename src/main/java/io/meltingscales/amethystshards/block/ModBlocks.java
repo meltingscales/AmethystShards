@@ -1,6 +1,7 @@
 package io.meltingscales.amethystshards.block;
 
 import io.meltingscales.amethystshards.AmethystShardsMod;
+import io.meltingscales.amethystshards.block.custom.SoundBlock;
 import io.meltingscales.amethystshards.item.ModItems;
 import java.util.function.Supplier;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -81,6 +82,10 @@ public class ModBlocks {
                       .strength(5f)
                       .requiresCorrectToolForDrops(),
                   UniformInt.of(3, 6)));
+
+  public static final RegistryObject<Block> SOUND_BLOCK =
+      registerBlock(
+          "sound_block", () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
     RegistryObject<T> toReturn = BLOCKS.register(name, block);

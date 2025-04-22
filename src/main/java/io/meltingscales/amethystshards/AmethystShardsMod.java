@@ -21,7 +21,7 @@ import org.slf4j.Logger;
 @Mod(AmethystShardsMod.MOD_ID)
 public class AmethystShardsMod {
   public static final String MOD_ID = "amethystshards";
-  private static final Logger LOGGER = LogUtils.getLogger();
+  public static final Logger LOGGER = LogUtils.getLogger();
 
   public AmethystShardsMod() {
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

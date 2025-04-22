@@ -14,5 +14,7 @@
 
   "creativetab.course_tab": "Course Tab",
 
-  "item.amethystshards.metal_detector.no_valuables": "No valuables found."
+  "item.amethystshards.metal_detector.no_valuables": "No valuables found.",
+
+  "block.amethystshards.sound_block": "Sound Block"
 }

@@ -11,3 +11,7 @@ my first real mod!
 - JDK 17
 - IntelliJ IDEA
 - gradlew
+
+## Setup
+
+    ./gradlew clean genIntellijRuns

@@ -49,7 +49,8 @@ public class SoundBlock extends Block {
   @Override
   public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
 
-    pLevel.playSound(pEntity, pPos, );
+    pLevel.playSound(
+        pEntity, pPos, SoundEvents.NOTE_BLOCK_BIT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
 
     super.stepOn(pLevel, pPos, pState, pEntity);
   }

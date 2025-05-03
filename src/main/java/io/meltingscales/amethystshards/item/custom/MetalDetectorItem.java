@@ -1,5 +1,6 @@
 package io.meltingscales.amethystshards.item.custom;
 
+import io.meltingscales.amethystshards.util.ModTags;
 import java.util.List;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
@@ -13,11 +14,14 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
 public class MetalDetectorItem extends Item {
+
+  // the maximum vertical distance to search for a valuable block
+  public int verticalSearchDepth = 64;
+
   public MetalDetectorItem(Properties properties) {
     super(properties);
   }
@@ -32,12 +36,14 @@ public class MetalDetectorItem extends Item {
 
       boolean foundBlock = false;
 
-      for (int i = 0; i <= positionClicked.getY() + 64; i++) {
-        BlockState blockState = pContext.getLevel().getBlockState(positionClicked.below(i));
+      for (int searchY = 0;
+          searchY <= (positionClicked.getY() + this.verticalSearchDepth);
+          searchY++) {
+        BlockState blockState = pContext.getLevel().getBlockState(positionClicked.below(searchY));
 
         // check if the block is a valuable ore
         if (isValuableBlock(blockState)) {
-          outputValuableCoordinates(positionClicked.below(i), player, blockState.getBlock());
+          outputValuableCoordinates(positionClicked.below(searchY), player, blockState.getBlock());
           foundBlock = true;
           break;
         }
@@ -98,8 +104,6 @@ public class MetalDetectorItem extends Item {
   }
 
   private boolean isValuableBlock(BlockState blockState) {
-    return blockState.is(Blocks.IRON_ORE)
-        || blockState.is(Blocks.DEEPSLATE_IRON_ORE)
-        || blockState.is(Blocks.DIAMOND_ORE);
+    return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
   }
 }

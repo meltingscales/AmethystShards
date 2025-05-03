@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "amethystshards:alexandrite_ore",
+    "#forge:ores"
+  ]
+}

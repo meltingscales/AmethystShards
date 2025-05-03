@@ -2,8 +2,8 @@
   "item.amethystshards.alexandrite": "Alexandrite",
   "item.amethystshards.raw_alexandrite": "Raw Alexandrite",
   "item.amethystshards.metal_detector": "Metal Detector",
-  "block.amethystshards.kohlrabi": "Kohlrabi",
-  "block.amethystshards.peat_brick": "Peat Brick",
+  "item.amethystshards.kohlrabi": "Kohlrabi",
+  "item.amethystshards.peat_brick": "Peat Brick",
 
   "block.amethystshards.alexandrite_block": "Block of Alexandrite",
   "block.amethystshards.raw_alexandrite_block": "Block of Raw Alexandrite",
@@ -17,5 +17,8 @@
 
   "creativetab.course_tab": "Course Tab",
 
-  "item.amethystshards.metal_detector.no_valuables": "No valuables found."
+  "item.amethystshards.metal_detector.no_valuables": "No valuables found.",
+  "tooltip.amethystshards.metal_detector.tooltip.shift": "Right click on blocks to find valuables!\nThis item will search vertically for iron-ore-like blocks.",
+  "tooltip.amethystshards.metal_detector.tooltip": "Press §eSHIFT§r for more info.",
+  "tooltip.amethystshards.sound_block.tooltip": "Plays nice sounds when walking or right-clicking."
 }

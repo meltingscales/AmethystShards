@@ -13,6 +13,18 @@ my first real mod!
 - IntelliJ IDEA
 - gradlew
 
-## Setup
+## Setup your IDe
 
     ./gradlew clean genIntellijRuns
+
+## Generate data files
+
+    ./gradlew runData
+
+## Test the mod
+
+    ./gradlew runClient
+
+## Notes
+
+See also ./NOTES.md for class notes.
